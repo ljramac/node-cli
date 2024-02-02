@@ -1,0 +1,30 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "plugins": [
+        "@babel/plugin-syntax-import-assertions"
+      ]
+    }
+  },
+  "extends": [
+    "standard"
+  ],
+  "plugins": ["chai-friendly"],
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "error"
+        ]
+      }
+    ],
+    "chai-friendly/no-unused-expressions": 2,
+    "no-unused-expressions": 0
+  },
+  "env": {
+    "mocha": true
+  }
+}
